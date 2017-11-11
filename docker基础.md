@@ -164,3 +164,36 @@ $ sudo docker run -d -P --name web --link db:db training/webapp python app.py
 `name`是我们连接容器的名字，alias是link的别名。让我们看如何使用alias。
 
 让我们使用docker ps来查看容器连接.
+
+# 数据卷
+* 数据卷可在容器之间共享或重用
+* 数据卷中的更改可以直接生效
+* 数据卷中的更改不会包含在镜像的更新中
+* 数据卷的生命周期一直持续到没有容器使用它为止
+## 添加一个数据卷
+你可以在docker run命令中使用-v标识来给容器内添加一个数据卷，你也可以在一次docker run命令中多次使用-v标识挂载多个数据卷。现在我们在web容器应用中创建单个数据卷。
+```
+$ sudo docker run -d -P --name web -v /webapp training/webapp python app.py
+```
+这会在容器内部创建一个新的卷/webapp
+
+> 注：类似的，你可以在Dockerfile中使用VOLUME指令来给创建的镜像添加一个或多个数据卷。
+##  挂载一个主机目录作为卷
+可以挂载本地主机目录到容器中：
+```
+$ sudo docker run -d -P --name web -v /src/webapp:/opt/webapp training/webapp python app.py
+```
+这将会把本地目录/src/webapp挂载到容器的/opt/webapp目录。宿主机上的目录必须是绝对路径，如果目录不存在docker会自动创建它。
+> 注：出于可移植和分享的考虑，这种方法不能够直接在Dockerfile中实现。作为宿主机目录——其性质——是依赖于特定宿主机的，并不能够保证在所有的宿主机上都存在这样的特定目录。  
+docker默认情况下是对数据卷有读写权限，但是我们通过这样的方式让数据卷只读：
+```
+$ sudo docker run -d -P --name web -v /src/webapp:/opt/webapp:ro training/webapp python app.py
+```
+这里我们同样挂载了`/src/webapp`目录，只是添加了ro选项来限制它只读。
+
+# 将宿主机上的特定文件挂载为数据卷
+除了能挂载目录外，-v标识还可以将宿主机的一个特定文件挂载为数据卷：
+```
+$ sudo docker run --rm -it -v ~/.bash_history:/.bash_history ubuntu /bin/bash
+```
+上述命令会在容器中运行一个bash shell，当你退出此容器时在主机上也能够看到容器中bash的命令历史。
