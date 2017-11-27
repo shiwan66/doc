@@ -117,3 +117,4 @@ $ sudo docker run --volumes-from dbdata2 -v $(pwd):/backup busybox tar xvf /back
 
 
 
+docker run --name jenkins -v  /root/docker/jenkins:/var/jenkins_home -v /bin/docker:/usr/bin/docker -v /var/run/docker.sock:/var/run/docker.sock -u root -p 8080:8080 -p 50000:50000 local_jenkins

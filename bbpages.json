@@ -1,0 +1,16 @@
+{
+    "footer": "文档->_->",
+    "list": [{
+        "title": "docker相关", 
+        "list": [
+            { "title": "docker", "paht": "docker/docker基础/docker.md"},
+            { "title": "docker基础", "paht": "docker/docker基础/docker基础.md"},
+            { "title": "docker管理容器数据", "paht": "docker/docker基础/docker管理容器数据.md"},
+            { "title": "centos7搭建 Node.js 环境", "paht": "docker/centos-node/centos7搭建 Node.js 环境.md"},
+            { "title": "Docker中运行Node.js web应用", "paht": "docker/centos-node/Docker中运行Node.js web应用.md"},
+            { "title": "CentOS 安装 Nginx", "paht": "docker/nginx,ftp,websocket/CentOS 安装 Nginx.md"},
+            { "title": "CentOS 搭建FTP服务", "paht": "docker/nginx,ftp,websocket/CentOS 搭建FTP服务.md"},
+            { "title": "CentOS 搭建微信小程序服务", "paht": "docker/nginx,ftp,websocket/CentOS 搭建微信小程序服务.md"}
+        ]
+    }]
+}
