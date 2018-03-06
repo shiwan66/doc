@@ -9,22 +9,22 @@
             { "title": "main", "path": "SensingShopWebDocument/app/main.md"},
             { "title": "core", "path": "SensingShopWebDocument/app/core.md"},
             { "title": "shared", "path": "SensingShopWebDocument/app/shared.md"},
-            { "title": "login", "path": "SensingShopWebDocument/app/login.md"},
+            // { "title": "login", "path": "SensingShopWebDocument/app/login.md"},
             { "title": "test", "path": "SensingShopWebDocument/app/test.md"},
-            { "title": "device", "path": "SensingShopWebDocument/app/device.md"},
-            { "title": "ads", "path": "SensingShopWebDocument/app/ads.md"},
-            { "title": "apply-form", "path": "SensingShopWebDocument/app/apply-form.md"},
-            { "title": "chart", "path": "SensingShopWebDocument/app/chart.md"},
-            { "title": "developer", "path": "SensingShopWebDocument/app/developer.md"},
-            { "title": "device-action", "path": "SensingShopWebDocument/app/device-action.md"},
-            { "title": "device-info", "path": "SensingShopWebDocument/app/device-info.md"},
-            { "title": "resource", "path": "SensingShopWebDocument/app/resource.md"},
-            { "title": "rest", "path": "SensingShopWebDocument/app/rest.md"},
-            { "title": "software", "path": "SensingShopWebDocument/app/software.md"},
-            { "title": "staff", "path": "SensingShopWebDocument/app/staff.md"},
-            { "title": "store", "path": "SensingShopWebDocument/app/store.md"},
-            { "title": "user", "path": "SensingShopWebDocument/app/user.md"},
-            { "title": "product", "path": "SensingShopWebDocument/app/product.md"}
+            // { "title": "device", "path": "SensingShopWebDocument/app/device.md"},
+            // { "title": "ads", "path": "SensingShopWebDocument/app/ads.md"},
+            // { "title": "apply-form", "path": "SensingShopWebDocument/app/apply-form.md"},
+            { "title": "chart", "path": "SensingShopWebDocument/app/chart.md"}
+            // { "title": "developer", "path": "SensingShopWebDocument/app/developer.md"},
+            // { "title": "device-action", "path": "SensingShopWebDocument/app/device-action.md"},
+            // { "title": "device-info", "path": "SensingShopWebDocument/app/device-info.md"},
+            // { "title": "resource", "path": "SensingShopWebDocument/app/resource.md"},
+            // { "title": "rest", "path": "SensingShopWebDocument/app/rest.md"},
+            // { "title": "software", "path": "SensingShopWebDocument/app/software.md"},
+            // { "title": "staff", "path": "SensingShopWebDocument/app/staff.md"},
+            // { "title": "store", "path": "SensingShopWebDocument/app/store.md"},
+            // { "title": "user", "path": "SensingShopWebDocument/app/user.md"},
+            // { "title": "product", "path": "SensingShopWebDocument/app/product.md"}
         ]
     }]
 }
