@@ -7,7 +7,7 @@
 > 路由守护文件，在各个router文件里使用
 
 ### auth.service
-> 用户登陆，登出。及权限管理
+> 用户登陆，登出。及权限管理   
 ```typescript
     // 示例
     // 用户信息
@@ -47,7 +47,7 @@
 ```
 
 ### core.module
-> 配置authHttp，配合localStorage进行jwt验证
+> 配置authHttp，配合localStorage进行jwt验证    
 ```typescript
 export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     return new AuthHttp(new AuthConfig({
