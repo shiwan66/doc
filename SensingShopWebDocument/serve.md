@@ -32,7 +32,10 @@
 
 ## 编译命令
 > ng build --prod --aot  
-> AOT静态编译，大大缩小js编译出的文件大小 
+> AOT静态编译，大大缩小js编译出的文件大小   
+
+## 如遇node编译超过内存，请使用如下命令
+> node --max_old_space_size=8192 "node_modules\@angular\cli\bin\ng" build --prod --aot 
 
 ## 编译输出文件夹
 > AppClients/dist
