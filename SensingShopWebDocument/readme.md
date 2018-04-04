@@ -2,7 +2,7 @@
 * JS框架 angular4
 * css框架 AdminDesigns(bootstrap v3)
 
-## 资源目录
+## 资源目录ssss
 > Appclients/src/assets
 
 ## 发布资源目录
